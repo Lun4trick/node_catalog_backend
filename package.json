@@ -1,0 +1,24 @@
+{
+  "name": "node_catalog_backend",
+  "version": "1.0.0",
+  "description": "Backend part of catalog task",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Levente Krotos",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1349.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
