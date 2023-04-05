@@ -1,9 +1,12 @@
 /* eslint-disable no-console */
 import express from 'express';
 import AWS from 'aws-sdk';
+import cors from 'cors';
 
 const app = express();
 const s3 = new AWS.S3();
+
+app.use(cors());
 
 app.get('/data', (req, res) => {
   const params = {
@@ -21,6 +24,6 @@ app.get('/data', (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(3001, () => {
   console.log('Server listening on port 3000');
 });
