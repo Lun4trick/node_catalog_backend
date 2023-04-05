@@ -5,7 +5,7 @@ import AWS from 'aws-sdk';
 const app = express();
 const s3 = new AWS.S3();
 
-app.getAll('/data', (req, res) => {
+app.get('/data', (req, res) => {
   const params = {
     Bucket: 'phone-webshop',
     Key: 'api/phones.json',

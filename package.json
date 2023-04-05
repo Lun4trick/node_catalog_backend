@@ -5,7 +5,8 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
+    "start": "node main.js",
+    "build": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Levente Krotos",
